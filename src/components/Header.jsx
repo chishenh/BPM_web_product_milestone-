@@ -30,7 +30,7 @@ export default function Header() {
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
                 <Link to="/" className="flex items-center gap-2 group">
-                    <img src="/logo.png" alt="BPM Logo" className="h-12 w-auto object-contain" />
+                    <img src="logo.png" alt="BPM Logo" className="h-12 w-auto object-contain" />
                 </Link>
 
                 {/* Desktop Nav */}

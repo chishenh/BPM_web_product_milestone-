@@ -62,7 +62,7 @@ export default function ProductScience() {
                         >
                             <div className="bg-surface p-4 rounded-3xl shadow-lg border border-slate-100">
                                 <img
-                                    src="/dnlite_chart.png"
+                                    src="dnlite_chart.png"
                                     alt="DNlite Golden Intervention Window Chart"
                                     className="w-full h-auto rounded-xl"
                                 />
@@ -108,7 +108,7 @@ export default function ProductScience() {
                         >
                             <div className="bg-white p-4 rounded-3xl shadow-lg border border-slate-100">
                                 <img
-                                    src="/dnlite_mechanism.png"
+                                    src="dnlite_mechanism.png"
                                     alt="DNlite Mechanism: Normal vs Abnormal PTM"
                                     className="w-full h-auto rounded-xl"
                                 />
@@ -180,7 +180,7 @@ export default function ProductScience() {
                             <h3 className="text-2xl font-bold text-primary mb-6">卓越的風險區分能力</h3>
                             <div className="relative mb-6 rounded-2xl overflow-hidden w-fit mx-auto">
                                 <img
-                                    src="/dnlite_risk_curve.png?v=2"
+                                    src="dnlite_risk_curve.png?v=2"
                                     alt="DNlite Risk Differentiation Curve"
                                     className="h-64 w-auto object-contain"
                                 />
@@ -201,7 +201,7 @@ export default function ProductScience() {
                             <h3 className="text-2xl font-bold text-primary mb-6">填補傳統檢測的盲區</h3>
                             <div className="relative mb-6 rounded-2xl overflow-hidden w-fit mx-auto">
                                 <img
-                                    src="/dnlite_risk_pie.png?v=2"
+                                    src="dnlite_risk_pie.png?v=2"
                                     alt="DNlite Identifying Hidden Risks"
                                     className="h-64 w-auto object-contain"
                                 />
