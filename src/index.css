@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  /* Logo-based Palette: Teal & Sky Blue */
+  --color-primary: #2C8C96;
+  /* The "B" Teal color */
+  --color-primary-light: #45AAB5;
+  --color-primary-dark: #1E6B73;
+
+  --color-secondary: #58B9C7;
+  /* The "PM" Blue color */
+  --color-secondary-light: #7ED1DC;
+  --color-secondary-dark: #3A9AA8;
+
+  --color-accent: #FCA311;
+  /* A warm gold/amber to complement the teals */
+  --color-accent-hover: #E58E00;
+
+  --color-surface: #F0F9FA;
+  /* Very light teal tint for backgrounds */
+  --color-surface-alt: #f8f9fa;
+  /* Keeping existing alt surface */
+
+  /* Typography */
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Gradients can be used as utilities or handled in components, 
+     but keeping the variables for reference */
+}
+
+/* Custom Utilities via standard CSS or @utility directives */
+:root {
+  --color-background: #ffffff;
+  --color-text-main: #333333;
+  --color-text-muted: #666666;
+  --color-text-light: #ffffff;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Component Classes */
+@layer components {
+  .btn {
+    @apply px-6 py-2 rounded-full font-medium transition-all duration-300 active:scale-95;
+  }
+
+  .btn-primary {
+    @apply bg-accent text-white hover:bg-accent-hover shadow-md hover:shadow-lg;
+  }
+
+  /* Re-mapping old utility names to new variables if needed, 
+       but Tailwind v4 should auto-detect vars defined in @theme as classes like bg-primary 
+       if we name them right. 
+       Note: --color-primary becomes bg-primary, text-primary etc automatically in v4. */
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Leaflet Overrides */
+.leaflet-tooltip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.leaflet-tooltip-top:before {
+  border-top-color: #000000 !important;
+  /* Match black */
+}
+
+.leaflet-tooltip-bottom:before {
+  border-bottom-color: #000000 !important;
+  /* Match black */
+}
+
+.leaflet-tooltip-left:before {
+  border-left-color: #000000 !important;
+  /* Match black */
+}
+
+.leaflet-tooltip-right:before {
+  border-right-color: #000000 !important;
+  /* Match black */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
