@@ -22,7 +22,7 @@ export default function ProductsPage() {
             <div className="bg-primary text-white py-16">
                 <div className="container mx-auto px-6 text-center">
                     <h1 className="text-4xl md:text-5xl font-bold mb-4">產品與解決方案</h1>
-                    <p className="text-xl text-primary-light/80 max-w-2xl mx-auto">
+                    <p className="text-xl text-white/90 max-w-2xl mx-auto">
                         致力於開發創新診斷技術，為腎病管理帶來革命性的改變
                     </p>
                 </div>
