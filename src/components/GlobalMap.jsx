@@ -190,32 +190,9 @@ export default function GlobalMap() {
                                     : 'bg-transparent border-transparent'
                                     }`}
                             >
-                                <div className="flex items-center gap-4">
-                                    {/* Left Column: Text Info */}
-                                    <div className="flex-1 min-w-0">
-                                        {/* Flag + Country */}
-                                        <div className="flex items-center gap-2 mb-1.5">
-                                            <span className={`fi fi-${item.iso} rounded-sm shadow-sm text-base`}></span>
-                                            <h3 className="font-bold text-base text-slate-800 leading-tight">{item.country}</h3>
-                                        </div>
-
-                                        {/* Regulatory Info */}
-                                        <div>
-                                            <p className="font-bold text-sm text-secondary mb-0.5">{item.acronym}</p>
-                                            <p className="text-xs text-slate-600 leading-snug line-clamp-2">
-                                                {item.agency}
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    {/* Right Column: Logo */}
-                                    <div className="w-16 h-16 flex items-center justify-center bg-white rounded-lg border border-slate-100 shadow-sm shrink-0 p-1">
-                                        {item.logo ? (
-                                            <img src={item.logo} alt={`${item.acronym} Logo`} className="w-full h-full object-contain" />
-                                        ) : (
-                                            <span className={`fi fi-${item.iso} text-3xl rounded-sm opacity-20`}></span>
-                                        )}
-                                    </div>
+                                <div className="flex items-center gap-3">
+                                    <span className={`fi fi-${item.iso} rounded-sm shadow-sm text-xl`}></span>
+                                    <h3 className="font-bold text-base text-slate-800 leading-tight">{item.country}</h3>
                                 </div>
                             </div>
                         ))}
