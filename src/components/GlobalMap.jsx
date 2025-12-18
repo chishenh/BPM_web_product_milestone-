@@ -7,29 +7,29 @@ import L from 'leaflet';
 // --- Data ---
 const certificationsData = {
     "Asia": [
-        { country: "Taiwan", acronym: "TFDA", agency: "Taiwan Food and Drug Administration", iso: "tw", lat: 23.6978, lng: 120.9605, logo: "/logos/tfda_logo.jpg" },
-        { country: "Malaysia", acronym: "MDA", agency: "Medical Device Authority", iso: "my", lat: 4.2105, lng: 101.9758, logo: "/logos/mda_logo.png" },
-        { country: "Thailand", acronym: "Thai FDA", agency: "Food and Drug Administration", iso: "th", lat: 15.8700, lng: 100.9925, logo: "/logos/thailand.svg" },
-        { country: "Vietnam", acronym: "MoH", agency: "Ministry of Health", iso: "vn", lat: 14.0583, lng: 108.2772, logo: "/logos/vietnam.svg" },
-        { country: "Indonesia", acronym: "MoH", agency: "Ministry of Health", iso: "id", lat: -0.7893, lng: 113.9213, logo: "/logos/indonesia.svg" },
-        { country: "Singapore", acronym: "HSA", agency: "Health Sciences Authority", iso: "sg", lat: 1.3521, lng: 103.8198, logo: "/logos/hsa_logo.png" }
+        { country: "Taiwan", acronym: "TFDA", agency: "Taiwan Food and Drug Administration", iso: "tw", lat: 23.6978, lng: 120.9605, logo: "logos/tfda_logo.jpg" },
+        { country: "Malaysia", acronym: "MDA", agency: "Medical Device Authority", iso: "my", lat: 4.2105, lng: 101.9758, logo: "logos/mda_logo.png" },
+        { country: "Thailand", acronym: "Thai FDA", agency: "Food and Drug Administration", iso: "th", lat: 15.8700, lng: 100.9925, logo: "logos/thailand.svg" },
+        { country: "Vietnam", acronym: "MoH", agency: "Ministry of Health", iso: "vn", lat: 14.0583, lng: 108.2772, logo: "logos/vietnam.svg" },
+        { country: "Indonesia", acronym: "MoH", agency: "Ministry of Health", iso: "id", lat: -0.7893, lng: 113.9213, logo: "logos/indonesia.svg" },
+        { country: "Singapore", acronym: "HSA", agency: "Health Sciences Authority", iso: "sg", lat: 1.3521, lng: 103.8198, logo: "logos/hsa_logo.png" }
     ],
     "Middle East": [
-        { country: "Saudi Arabia", acronym: "SFDA", agency: "Saudi Food and Drug Authority", iso: "sa", lat: 23.8859, lng: 45.0792, logo: "/logos/sfda_logo.png" },
-        { country: "UAE", acronym: "MoHAP", agency: "Ministry of Health and Prevention", iso: "ae", lat: 23.4241, lng: 53.8478, logo: "/logos/mohap_logo.png" },
-        { country: "Kuwait", acronym: "MoH", agency: "Ministry of Health", iso: "kw", lat: 29.3117, lng: 47.4818, logo: "/logos/kuwait_moh_logo.png" },
-        { country: "Turkey", acronym: "TİTCK", agency: "Turkish Medicines and Medical Devices Agency", iso: "tr", lat: 38.9637, lng: 35.2433, logo: "/logos/titck_logo.png" }
+        { country: "Saudi Arabia", acronym: "SFDA", agency: "Saudi Food and Drug Authority", iso: "sa", lat: 23.8859, lng: 45.0792, logo: "logos/sfda_logo.png" },
+        { country: "UAE", acronym: "MoHAP", agency: "Ministry of Health and Prevention", iso: "ae", lat: 23.4241, lng: 53.8478, logo: "logos/mohap_logo.png" },
+        { country: "Kuwait", acronym: "MoH", agency: "Ministry of Health", iso: "kw", lat: 29.3117, lng: 47.4818, logo: "logos/kuwait_moh_logo.png" },
+        { country: "Turkey", acronym: "TİTCK", agency: "Turkish Medicines and Medical Devices Agency", iso: "tr", lat: 38.9637, lng: 35.2433, logo: "logos/titck_logo.png" }
     ],
     "Europe": [
-        { country: "EU", acronym: "CA/NB", agency: "Competent Authority / Notified Body", iso: "eu", lat: 50.8503, lng: 4.3517, logo: "/logos/eu_ivdr_logo.png" }
+        { country: "EU", acronym: "CA/NB", agency: "Competent Authority / Notified Body", iso: "eu", lat: 50.8503, lng: 4.3517, logo: "logos/eu_ivdr_logo.png" }
     ],
     "Central & South America": [
-        { country: "Mexico", acronym: "COFEPRIS", agency: "Comisión Federal para la Protección contra Riesgos Sanitarios", iso: "mx", lat: 23.6345, lng: -102.5528, logo: "/logos/mexico.png" },
-        { country: "Guatemala", acronym: "MSPAS", agency: "Ministerio de Salud Pública y Asistencia Social", iso: "gt", lat: 15.7835, lng: -90.2308, logo: "/logos/guatemala.png" },
-        { country: "Brazil", acronym: "ANVISA", agency: "Agência Nacional de Vigilância Sanitária", iso: "br", lat: -14.2350, lng: -51.9253, logo: "/logos/brazil.png" }
+        { country: "Mexico", acronym: "COFEPRIS", agency: "Comisión Federal para la Protección contra Riesgos Sanitarios", iso: "mx", lat: 23.6345, lng: -102.5528, logo: "logos/mexico.png" },
+        { country: "Guatemala", acronym: "MSPAS", agency: "Ministerio de Salud Pública y Asistencia Social", iso: "gt", lat: 15.7835, lng: -90.2308, logo: "logos/guatemala.png" },
+        { country: "Brazil", acronym: "ANVISA", agency: "Agência Nacional de Vigilância Sanitária", iso: "br", lat: -14.2350, lng: -51.9253, logo: "logos/brazil.png" }
     ],
     "Oceania": [
-        { country: "Australia", acronym: "TGA", agency: "Therapeutic Goods Administration", iso: "au", lat: -25.2744, lng: 133.7751, logo: "/logos/tga_logo.png" }
+        { country: "Australia", acronym: "TGA", agency: "Therapeutic Goods Administration", iso: "au", lat: -25.2744, lng: 133.7751, logo: "logos/tga_logo.png" }
     ]
 };
 
