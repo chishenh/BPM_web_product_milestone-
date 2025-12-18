@@ -49,6 +49,28 @@ const distributorsData = {
             flag: "my"
         },
         {
+            country: "Hong Kong",
+            distributor: "Bridgeway",
+            address: "Kowloon Bay, Hong Kong",
+            phone: null,
+            website: null,
+            lat: 22.3232,
+            lng: 114.2148,
+            flag: "hk"
+        },
+        {
+            country: "Sri Lanka",
+            distributor: "GEORGE STEUART HEALTH",
+            address: "Colombo, Sri Lanka",
+            phone: null,
+            website: "https://georgesteuart.lk/",
+            lat: 6.9271,
+            lng: 79.8612,
+            flag: "lk"
+        }
+    ],
+    "Middle East": [
+        {
             country: "Kuwait",
             distributor: "Advanced Medical German company",
             address: "Kuwait City, Kuwait",
@@ -77,26 +99,6 @@ const distributorsData = {
             lat: 25.2048,
             lng: 55.2708,
             flag: "ae"
-        },
-        {
-            country: "Hong Kong",
-            distributor: "Bridgeway",
-            address: "Kowloon Bay, Hong Kong",
-            phone: null,
-            website: null,
-            lat: 22.3232,
-            lng: 114.2148,
-            flag: "hk"
-        },
-        {
-            country: "Sri Lanka",
-            distributor: "GEORGE STEUART HEALTH",
-            address: "Colombo, Sri Lanka",
-            phone: null,
-            website: "https://georgesteuart.lk/",
-            lat: 6.9271,
-            lng: 79.8612,
-            flag: "lk"
         }
     ],
     "Europe": [
@@ -141,7 +143,7 @@ const distributorsData = {
             flag: "hr"
         }
     ],
-    "North America": [
+    "Americas": [
         {
             country: "United States",
             distributor: "Precision Diabetes",
@@ -161,9 +163,17 @@ const distributorsData = {
             lat: 19.4326,
             lng: -99.1332,
             flag: "mx"
-        }
-    ],
-    "South America": [
+        },
+        {
+            country: "Guatemala",
+            distributor: "Flores Medical",
+            address: "Guatemala City, Guatemala",
+            phone: null,
+            website: null,
+            lat: 14.6349,
+            lng: -90.5069,
+            flag: "gt"
+        },
         {
             country: "Brazil",
             distributor: "Flores Medical",
@@ -197,18 +207,6 @@ const distributorsData = {
             lat: -37.9547,
             lng: 145.1866,
             flag: "au"
-        }
-    ],
-    "Central America": [
-        {
-            country: "Guatemala",
-            distributor: "Flores Medical",
-            address: "Guatemala City, Guatemala",
-            phone: null,
-            website: null,
-            lat: 14.6349,
-            lng: -90.5069,
-            flag: "gt"
         }
     ]
 };
@@ -323,12 +321,11 @@ export default function GlobalDistributors() {
     // Default centers for regions
     const regionCenters = {
         "Asia": [20, 100],
+        "Middle East": [25, 45],
         "Europe": [50, 15],
-        "North America": [40, -100],
-        "South America": [-15, -60],
+        "Americas": [10, -80],
         "Africa": [10, 20],
-        "Oceania": [-25, 135],
-        "Central America": [15, -90]
+        "Oceania": [-25, 135]
     };
 
     const currentDistributors = distributorsData[selectedRegion] || [];
