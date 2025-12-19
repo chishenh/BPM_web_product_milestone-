@@ -21,18 +21,16 @@ export default function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
                     >
-                        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-white text-sm font-medium mb-8 backdrop-blur-sm">
-                            <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
-                            Leading the way in Biotechnology
-                        </div>
+                        <h2 className="text-2xl font-semibold text-secondary-light mb-4">
+                            Bio Preventive Medicine
+                        </h2>
 
                         <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight mb-6">
-                            Innovating for a <br />
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary-light to-white">Healthier Tomorrow</span>
+                            預見未來，守護健康
                         </h1>
 
                         <p className="text-lg text-slate-200 mb-10 max-w-lg leading-relaxed font-light">
-                            Pioneering new standards in drug delivery and therapeutic development to improve patient lives globally.
+                            以創新診斷，實現預防醫學的願景
                         </p>
 
                         <div className="flex flex-wrap gap-4">
